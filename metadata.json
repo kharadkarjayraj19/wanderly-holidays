@@ -1,0 +1,6 @@
+{
+  "name": "Wanderly Holidays",
+  "description": "A premium, modern travel showcase featuring handpicked domestic tour packages with pristine aesthetics and smooth animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
