@@ -5,7 +5,7 @@
 
 import { DestinationPackage, Testimonial } from '../types';
 
-export const DOMESTIC_PACKAGES: DestinationPackage[] = [
+const ORIGINAL_DOMESTIC_PACKAGES: DestinationPackage[] = [
   {
     id: 'maharashtra-3-jyotirling',
     title: 'Maharashtra 3 Jyotirling Tour',
@@ -1263,8 +1263,434 @@ export const DOMESTIC_PACKAGES: DestinationPackage[] = [
         activities: ['Amber Fort exploration', 'Jal Mahal & Hawa Mahal', 'City Palace & Jantar Mantar', 'Return drive to Delhi', 'Delhi/Jaipur drop-off']
       }
     ]
+  },
+  {
+    id: 'mumbai-slums-tour',
+    title: 'Mumbai Slums Tour (Dharavi)',
+    subtitle: 'Respectful guided walk, thriving local cottage industries & community spirit',
+    description: 'An educational, respectful, and deeply inspiring 4 to 5-hour guided walking tour of Dharavi. Discover how a vibrant community of over one million people drives massive small-scale industries including pottery, leather tanning, and recycling, showcasing unparalleled resourcefulness.',
+    duration: '4-5 Hours',
+    price: 1499,
+    originalPrice: 1999,
+    transportPrice: 999,
+    transportOriginalPrice: 1299,
+    rating: 4.89,
+    reviewsCount: 142,
+    image: 'https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=800&q=80',
+    category: 'day-tours',
+    tags: ['Guided Walk', 'Community Insights', 'Resilient Mumbai'],
+    highlights: [
+      'Learn about Dharavi\'s recycling, pottery, and leather industries',
+      'Walk alongside a professional and respectful resident guide',
+      'Interact with local craftsmen and view active daily operations',
+      'Support community development and local education programs directly'
+    ],
+    inclusions: [
+      'All options: Professional, highly-trained, respectful English-speaking guide',
+      'All options: Bottled drinking water and traditional Indian cutting chai',
+      'Stay option: Clean air-conditioned private hotel pickup and drop-off in Mumbai'
+    ],
+    exclusions: [
+      'All options: Gratuities for guide and local artisans',
+      'All options: Heavy meals and personal shopping expenses'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Walk of Resilience & Inspiration',
+        description: 'Meet your guide and explore the active commercial and residential sectors of Dharavi. Learn about its massive local economy, recycling plants, pottery square, and leather goods stores, gaining rich insights into community harmony.',
+        activities: ['Guide meetup at station/hotel', 'Cottage industries walk', 'Pottery Square (Kumbharwada) tour', 'Recycling plants walk', 'Chai break & community sharing']
+      }
+    ]
+  },
+  {
+    id: 'pune-cheese-tasting',
+    title: 'Cheese Tasting Tour in Pune',
+    subtitle: 'Savor gourmet artisanal farmstead cheeses with scenic countryside creamery tours',
+    description: 'A delicious day-long gourmet excursion from Pune. Travel to a beautiful rural artisanal farmstead, explore behind-the-scenes cheese aging cellars, meet passionate local cheesemakers, and enjoy a guided tasting of premium cheeses paired with fresh accompaniments.',
+    duration: '1 Day',
+    price: 3499,
+    originalPrice: 4299,
+    transportPrice: 1999,
+    transportOriginalPrice: 2499,
+    rating: 4.91,
+    reviewsCount: 88,
+    image: 'https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=800&q=80',
+    category: 'day-tours',
+    tags: ['Cheese Tasting', 'Artisanal Creamery', 'Pune Getaway'],
+    highlights: [
+      'Guided tasting session featuring over 6 varieties of aged artisanal cheeses',
+      'In-depth tour of the creamery, fermentation tanks, and wooden aging cellars',
+      'Engaging direct discussion with the head cheesemaker',
+      'Relaxing farmstead garden lunch with fresh farm-grown ingredients'
+    ],
+    inclusions: [
+      'All options: Complete entry, creamery tour, and guided cheese tasting masterclass',
+      'All options: Gourmet farmstead lunch and organic juice/wine pairing',
+      'Stay option: Door-to-door private AC transport from your Pune hotel'
+    ],
+    exclusions: [
+      'All options: Additional cheese block purchases or retail jars',
+      'All options: Personal tips and guide gratuities'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Delectable Farmstead Escape',
+        description: 'Drive from Pune to the scenic farmstead. Tour the dairy fields and creamery, understand cheese aging processes, experience a premium tasting masterclass, and finish with a peaceful garden lunch before returning.',
+        activities: ['Pune pickup (8:30 AM)', 'Scenic drive to farmstead', 'Artisanal creamery & cellar tour', 'Cheese tasting masterclass', 'Farm-to-table lunch', 'Return to Pune']
+      }
+    ]
+  },
+  {
+    id: 'pune-farmer-family',
+    title: 'A Day with a Farmer Family (Pune)',
+    subtitle: 'Ride a classic buffalo cart, pluck fresh organic veggies & experience authentic rural culture',
+    description: 'Escape the high-tech city life of Pune for a day filled with rustic simplicity and warm hospitality. Connect with an authentic rural family, enjoy a traditional welcome, ride a wooden buffalo cart, pick vegetables directly from the soil, and enjoy a farm-to-table hot lunch cooked over a traditional mud stove.',
+    duration: '1 Day',
+    price: 2999,
+    originalPrice: 3599,
+    transportPrice: 1499,
+    transportOriginalPrice: 1899,
+    rating: 4.95,
+    reviewsCount: 114,
+    image: 'https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=800&q=80',
+    category: 'day-tours',
+    tags: ['Rural Culture', 'Farmer Family', 'Pune Getaway'],
+    highlights: [
+      'Experience a delightful buffalo/bullock cart ride down country trails',
+      'Pluck fresh, pesticide-free green vegetables directly from active crops',
+      'Dine on authentic, wood-fire cooked lunch (Pithla Bhakri & Thecha)',
+      'Dress up in traditional Maharashtrian attire for beautiful family photographs'
+    ],
+    inclusions: [
+      'All options: Traditional warm welcome with tilak and sweet local drinks',
+      'All options: Guided farming activities, buffalo cart ride, and field harvest tour',
+      'Stay option: Authentic wood-fired mud-stove farm-to-table lunch',
+      'All options: AC car round-trip transfers from Pune'
+    ],
+    exclusions: [
+      'All options: Bulk buying of farm-grown grains/spices from villagers',
+      'All options: Personal tips to farming helpers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Rustic Village & Farming Heritage',
+        description: 'Depart Pune for a beautiful rural farm. Receive a family welcome, take a memorable buffalo cart ride, pluck seasonal vegetables, watch a cooking demonstration on a wood-fire stove, share a meal, and head back to Pune.',
+        activities: ['Pune hotel pickup (8:00 AM)', 'Village welcome ceremony', 'Buffalo cart ride', 'Organic vegetable harvesting', 'Chulha cooking class', 'Maharashtrian feast', 'Pune return']
+      }
+    ]
+  },
+  {
+    id: 'nagpur-tadoba-safari',
+    title: 'Nagpur: Tadoba National Park Wildlife Safari',
+    subtitle: 'Spot Royal Bengal Tigers and leopards on an exciting open-top 4x4 Jeep Safari',
+    description: 'Travel from Nagpur to Tadoba-Andhari Tiger Reserve, Maharashtra\'s oldest and most renowned national park. Home to a booming population of tigers, sloth bears, wild dogs, and leopards, this day-long private expedition includes a thrilling open Gypsy jungle safari with expert naturalists.',
+    duration: '1 Day (Full Day)',
+    price: 8999,
+    originalPrice: 10999,
+    transportPrice: 4999,
+    transportOriginalPrice: 5999,
+    rating: 4.96,
+    reviewsCount: 204,
+    image: 'https://images.unsplash.com/photo-1615959189197-48400dc26446?auto=format&fit=crop&w=800&q=80',
+    category: 'day-tours',
+    tags: ['Wildlife Safari', 'Tiger Spotting', 'Nagpur Departure'],
+    highlights: [
+      'Ride in an open 4x4 Gypsy with a certified naturalist guide',
+      'Search for majestic Royal Bengal Tigers, leopards, and herds of spotted deer',
+      'Observe rich marshland birds around Tadoba and Telia lake zones',
+      'Seamless private highway transfers from Nagpur hotels/airport'
+    ],
+    inclusions: [
+      'All options: Certified open 4x4 Gypsy, forest entry tickets, and permits',
+      'All options: Certified government naturalist guide accompanying the safari',
+      'Stay option: Multi-cuisine hot buffet lunch at a luxury resort in Tadoba',
+      'All options: Private AC Sedan round-trip transport from Nagpur'
+    ],
+    exclusions: [
+      'All options: Professional camera/lens entry fees (charged by forest department)',
+      'All options: Personal tips, wildlife souvenirs, and breakfast'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Wilderness & Tiger Trails',
+        description: 'Depart early morning from Nagpur. Arrive at Tadoba Reserve, complete registration, and board your open-air Gypsy. Explore the dense bamboo forest zones with expert guides. Re-energize with lunch before your scenic return to Nagpur.',
+        activities: ['Early Nagpur pickup (5:00 AM)', 'Scenic drive to Tadoba', 'Jungle registration', '4x4 open-top Gypsy safari', 'Tiger & wildlife spotting', 'Resort lunch', 'Nagpur return drop-off']
+      }
+    ]
+  },
+  {
+    id: 'delhi-food-spices',
+    title: 'Delhi: Old Delhi Street Food & Spices Day Tour',
+    subtitle: 'A sensory adventure of historic flavors, rickshaw rides & wholesale spice markets',
+    description: 'Unveil Old Delhi’s magic through your tastebuds! Led by a passionate food historian, walk through the vibrant alleys of Chandni Chowk, take a colorful cycle-rickshaw ride, taste iconic dishes from family stalls running for centuries, and explore Khari Baoli, the largest wholesale spice market in Asia.',
+    duration: '1 Day',
+    price: 2499,
+    originalPrice: 3299,
+    transportPrice: 1499,
+    transportOriginalPrice: 1999,
+    rating: 4.94,
+    reviewsCount: 312,
+    image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80',
+    category: 'day-tours',
+    tags: ['Street Food Walk', 'Old Delhi Heritage', 'Spice Market Tour'],
+    highlights: [
+      'Explore Khari Baoli spice market with a guide to learn about traditional spices',
+      'Enjoy an exciting cycle-rickshaw ride through Delhi\'s oldest narrow markets',
+      'Savor iconic street delicacies (Chaat, stuffed Paranthas, hot Jalebi & Rabri)',
+      'Walk past historic mansions, royal mosques, and ancient street-scapes'
+    ],
+    inclusions: [
+      'All options: Experienced local food historian guide',
+      'All options: All food tastings (8+ legendary dishes), local sweets, and bottled water',
+      'All options: Private cycle-rickshaw rides inside Chandni Chowk',
+      'Stay option: Door-to-door private A/C sedan pickup/drop-off from Delhi hotels'
+    ],
+    exclusions: [
+      'All options: Bulk purchases of retail spices, dry fruits, or teas',
+      'All options: Personal tips for the rickshaw pullers and vendors'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Epicurean Journey through Chandni Chowk',
+        description: 'Meet your guide at the historic Red Fort or hotel. Climb into a rickshaw, wind through silver markets, explore ancient alleys, sample a variety of sweet and spicy street food, and breathe in the aromatic air of the spice market.',
+        activities: ['Delhi hotel pickup', 'Rickshaw ride in Chandni Chowk', 'Paranthe Wali Gali food tasting', 'Khari Baoli Spice market walk', 'Heritage home tea session', 'Sweet dessert tasting']
+      }
+    ]
+  },
+  {
+    id: 'agra-food-tuktuk',
+    title: 'Agra Food Tour & Tuk Tuk Heritage Ride',
+    subtitle: 'Local Petha tasting, Mughlai street delicacies & colorful bazaar tuk-tuk rides',
+    description: 'Go beyond the Taj Mahal and delve into the royal culinary heritage of Agra. Wind through bustling bazaars in a colorful three-wheeled Tuk Tuk. Taste the world-famous Agra Petha (pumpkin dessert), feast on slow-cooked Mughlai kebabs, and sip sweet clay-pot lassi.',
+    duration: '1 Day',
+    price: 1999,
+    originalPrice: 2499,
+    transportPrice: 999,
+    transportOriginalPrice: 1299,
+    rating: 4.87,
+    reviewsCount: 165,
+    image: 'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=800&q=80',
+    category: 'day-tours',
+    tags: ['Tuk Tuk Adventure', 'Mughlai Delicacies', 'Agra Petha Tasting'],
+    highlights: [
+      'Breezy, authentic Tuk Tuk ride through old Agra\'s chaotic and beautiful markets',
+      'Savor authentic slow-roasted Mughlai seekh kebabs and fresh hot tandoori naan',
+      'Enjoy a guided tasting of 6+ unique varieties of traditional Agra Petha',
+      'Stroll down Kinari Bazaar to view traditional wedding and embroidery crafts'
+    ],
+    inclusions: [
+      'All options: Guided Tuk Tuk hire with local driver and food escort',
+      'All options: Complete food tasting, sweet sampling, and bottled water',
+      'Stay option: Return private AC vehicle transfer from your Agra hotel/station'
+    ],
+    exclusions: [
+      'All options: Monument entry fees (such as Taj Mahal or Agra Fort)',
+      'All options: Personal purchases and guide tips'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Bazaar Flavors & Three-Wheeled Adventures',
+        description: 'Board your private Tuk Tuk for a lively ride. Tour the bustling bazaars, taste mouth-watering Bedai & Jalebi breakfast, sample premium Pethas at legendary shops, try authentic Mughlai kebabs, and see local artisans at work.',
+        activities: ['Agra pickup', 'Tuk Tuk bazaar exploration', 'Bedai & Jalebi sampling', 'Famous Agra Petha tasting', 'Mughlai kebab & naan feast', 'Kinari Bazaar craft tour']
+      }
+    ]
+  },
+  {
+    id: 'goa-city-fort-tour',
+    title: 'Goa: Full Day City, Churches & Heritage Fort Tour',
+    subtitle: 'UNESCO old Goa cathedrals, Portuguese Latin quarter walk & scenic Fort Aguada',
+    description: 'Explore the spectacular heritage, stunning architecture, and coastal charm of Goa. Stroll past whitewashed Portuguese cathedrals in Old Goa, wander the extremely photogenic, colorful lanes of Fontainhas Latin Quarter, relax on Miramar Beach, and step onto the battlements of the 17th-century Fort Aguada.',
+    duration: '1 Day',
+    price: 3999,
+    originalPrice: 4799,
+    transportPrice: 2499,
+    transportOriginalPrice: 2999,
+    rating: 4.91,
+    reviewsCount: 182,
+    image: 'https://images.unsplash.com/photo-1512780511886-00c66229479f?auto=format&fit=crop&w=800&q=80',
+    category: 'day-tours',
+    tags: ['Heritage Forts', 'Portuguese Churches', 'Fontainhas Walk'],
+    highlights: [
+      'Explore the historic UNESCO sites Se Cathedral and Basilica of Bom Jesus',
+      'Take memorable photographs in Fontainhas, Asia\'s only Portuguese Latin quarter',
+      'Climb Fort Aguada\'s old lighthouse and battlements overlooking the Arabian Sea',
+      'Enjoy a scenic driving tour along the Mandovi river and Miramar beach front'
+    ],
+    inclusions: [
+      'All options: Full private air-conditioned vehicle with professional local driver-guide',
+      'All options: All toll taxes, fuel, parking charges, and driver allowances',
+      'Stay option: Traditional Goan lunch + entry to a spice plantation'
+    ],
+    exclusions: [
+      'All options: Water-sports fees, personal shopping, and beach bed rentals',
+      'All options: Professional camera/lens entry fees inside museums'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Portuguese Heritage & Coastal Marvels',
+        description: 'Set out on a heritage loop. Explore historical churches in Old Goa, capture beautiful pastel-colored houses in Fontainhas, walk Miramar Beach, and watch the ocean waves crash against the rocks of Fort Aguada at sunset.',
+        activities: ['Goa hotel pickup (9:00 AM)', 'Old Goa Cathedrals tour', 'Fontainhas walking tour', 'Miramar beach sunset drive', 'Fort Aguada exploration', 'Return hotel transfer']
+      }
+    ]
+  },
+  {
+    id: 'cochin-munnar-alleppey-4day',
+    title: 'Cochin: 4-Day Private Tour of Munnar & Alleppey',
+    subtitle: 'Experience Munnar\'s organic tea valleys and float on an Alleppey backwater houseboat',
+    description: 'A spectacular 4-day private holiday encapsulating the very best of Kerala. Wind through mountain valleys to the tea estates of Munnar, spot endangered wildlife at Eravikulam, and spend a highly romantic night floating along the peaceful canals of Alleppey in your private wooden Kettuvallam houseboat.',
+    duration: '3 Nights / 4 Days',
+    price: 15999,
+    originalPrice: 19999,
+    transportPrice: 9999,
+    transportOriginalPrice: 12499,
+    rating: 4.97,
+    reviewsCount: 228,
+    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
+    category: 'day-tours',
+    tags: ['Kerala Backwaters', 'Munnar Tea Hills', 'Private Houseboat'],
+    highlights: [
+      'Glide through palm-shaded canals on a private premium houseboat with meals included',
+      'Climb Lockhart tea valley and learn ancient organic tea making methods',
+      'Spot rare Nilgiri Tahr mountain goats in Eravikulam National Park',
+      'Private door-to-door AC car pickup and return drops at Cochin Airport/Station'
+    ],
+    inclusions: [
+      'Stay option: 2 Nights premium Munnar resort + 1 Night in Private Houseboat in Alleppey',
+      'Stay option: All meals (Breakfast, Lunch, Dinner) served freshly onboard the Houseboat',
+      'All options: Private AC Sedan/SUV for the entire 4-day sightseeing circuit',
+      'All options: Highly experienced driver-guide with fuel, tolls, and parking allowances'
+    ],
+    exclusions: [
+      'All options: Special national park entry tickets, camera passes, and tea museum fee',
+      'Stay option: Meals in Munnar outside of daily buffet breakfast'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Cochin Arrival & Drive to Misty Munnar (130 km / 4 hrs)',
+        description: 'Receive a warm greeting at Kochi airport/station. Drive up winding roads past Cheeyappara and Valara waterfalls. Arrive in Munnar, check into your green resort, and enjoy a peaceful evening surrounded by mist.',
+        activities: ['Kochi pickup', 'Valara & Cheeyappara scenic waterfalls', 'Resort check-in', 'Leisure evening in tea country']
+      },
+      {
+        day: 2,
+        title: 'Munnar Tea Estates & National Park',
+        description: 'Explore Munnar’s endless green valleys. Spot the Nilgiri Tahr at Eravikulam National Park, visit Mattupetty Lake, capture your voice at Echo Point, and enjoy a guided tour inside the Munnar Tea Museum.',
+        activities: ['Eravikulam mountain safari', 'Mattupetty Lake stroll', 'Echo Point photography', 'Tea Museum walk & tea tasting']
+      },
+      {
+        day: 3,
+        title: 'Munnar to Alleppey Houseboat Dream (140 km / 4 hrs)',
+        description: 'Drive down to Alleppey. Board your beautifully crafted private wooden houseboat. Enjoy a welcome drink as you float down palm-fringed backwaters, watching village life and enjoying fresh local Keralan lunches.',
+        activities: ['Houseboat check-in (12:00 PM)', 'Backwater cruising', 'Traditional Kerala lunch & dinner onboard', 'Floating cottage night stay']
+      },
+      {
+        day: 4,
+        title: 'Fort Kochi Tour & Kochi Departure (60 km / 1.5 hrs)',
+        description: 'Wake up to a floating breakfast, then disembark in Alleppey. Drive to Fort Kochi to see 16th-century Chinese Fishing Nets and historic St. Francis Church. Transfer to Kochi Airport or Station for your flight home.',
+        activities: ['Floating breakfast', 'Houseboat checkout', 'Fort Kochi tour', 'Chinese Fishing Nets walk', 'Airport/Station drop-off']
+      }
+    ]
+  },
+  {
+    id: 'aurangabad-farmer-family',
+    title: 'A Day with a Farmer Family (Aurangabad)',
+    subtitle: 'Traditional Marathwada welcome, buffalo cart ride & sugarcane farm experience',
+    description: 'Get deep into the heart of agricultural India. Connect with a warm farming family near Aurangabad. Hop into a hand-carved wooden buffalo cart to traverse dense sugarcane fields, pluck fresh organic vegetables and sweet corn, and share a delicious, spicy country lunch cooked on an open fire.',
+    duration: '1 Day',
+    price: 2999,
+    originalPrice: 3599,
+    transportPrice: 1499,
+    transportOriginalPrice: 1899,
+    rating: 4.93,
+    reviewsCount: 74,
+    image: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80',
+    category: 'day-tours',
+    tags: ['Deccan Farming', 'Farmer Family', 'Aurangabad Departure'],
+    highlights: [
+      'Take a peaceful and bumpy buffalo cart ride through historic sugarcane fields',
+      'Pluck fresh sweet-corn, sugarcane, and native vegetables with the family',
+      'Feast on authentic spicy Marathwada lunch (Bajra Bhakri, Shengsoli & Pithla)',
+      'Participate in organic traditional soil tilling and crop harvesting'
+    ],
+    inclusions: [
+      'All options: Heartfelt rural welcome, custom tilak, and farm tours',
+      'All options: Guided sugarcane farm walking tour, harvesting activities, and buffalo ride',
+      'Stay option: Authentic Marathwada country-side wood-fired lunch',
+      'All options: Return private AC vehicle transfer from Aurangabad hotels'
+    ],
+    exclusions: [
+      'All options: Purchases of raw farm jaggery or whole grains from villagers',
+      'All options: Gratuities for farm laborers and local helpers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Sugarcane Harvester & Rural Hospitality',
+        description: 'Travel from Aurangabad to the lush Deccani plains. Receive a traditional greeting from the family, take an exciting buffalo cart ride, learn about native water irrigation, pick sugarcane, and enjoy a spicy country feast.',
+        activities: ['Aurangabad hotel pickup (8:30 AM)', 'Village welcome ceremony', 'Buffalo cart field tour', 'Sugarcane cutting & tasting', 'Wood-fire lunch preparation', 'Marathwada feast', 'Aurangabad return']
+      }
+    ]
+  },
+  {
+    id: 'mumbai-farmer-family',
+    title: 'A Day with a Farmer Family (Mumbai)',
+    subtitle: 'Escape the metropolis for a serene village getaway, buffalo cart ride & organic lunch',
+    description: 'Contrast the fast-paced energy of Mumbai with the soothing tranquility of a traditional organic farm. Travel in comfort to a peaceful village, feel the warmth of an active farming family, enjoy a buffalo cart ride through green paths, pick fresh leafy vegetables to take home, and share an incredible organic feast.',
+    duration: '1 Day',
+    price: 3499,
+    originalPrice: 4299,
+    transportPrice: 1999,
+    transportOriginalPrice: 2499,
+    rating: 4.96,
+    reviewsCount: 154,
+    image: 'https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=800&q=80',
+    category: 'day-tours',
+    tags: ['Mumbai Weekend Getaway', 'Farmer Family', 'Organic Countryside'],
+    highlights: [
+      'Quick escape from Mumbai to a serene organic farming village',
+      'Ride an authentic buffalo/bullock cart down peaceful country trails',
+      'Harvest fresh pesticide-free greens and native fruits directly from the land',
+      'Savor a hot, delicious wood-fire cooked lunch with organic ghee and handpicked crops'
+    ],
+    inclusions: [
+      'All options: Rural family welcome with local lemon drinks and tilak',
+      'All options: Full village walk, buffalo cart ride, tilling demonstration, and harvesting',
+      'Stay option: Incredible organic wood-fire cooked village lunch',
+      'All options: Comfortable private A/C sedan return transport from Mumbai'
+    ],
+    exclusions: [
+      'All options: Heavy personal shopping of country pickles and handloom products',
+      'All options: Personal tips and guide gratuities'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Soothe the Soul in the Maharashtra Countryside',
+        description: 'Private morning pickup from Mumbai. Reach the peaceful green countryside, receive a welcoming ceremony, take a refreshing buffalo cart ride, tour organic soil plots, pick fresh green leaves, enjoy a farm-to-table lunch, and return in the evening.',
+        activities: ['Mumbai pickup (7:30 AM)', 'Scenic drive to rural village', 'Traditional family greeting', 'Bumpy buffalo cart ride', 'Organic harvesting tour', 'Chulha village feast', 'Return to Mumbai']
+      }
+    ]
   }
 ];
+
+// Helper to shuffle packages dynamically for a mixed variety on load
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+export const DOMESTIC_PACKAGES: DestinationPackage[] = shuffleArray(ORIGINAL_DOMESTIC_PACKAGES);
 
 export const TESTIMONIALS: Testimonial[] = [
   {
